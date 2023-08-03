@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navlink, li, a, button{
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 8%;
+            background-color: rgb(124, 123, 123);
+        }
+
+        .navlink, li{
+            display: inline-block;
+            padding: 0 15px ;
+        }
+
+        .navlink, li, a{
+            transition: all 0.3s ease 0;
+        }
+
+        .navlink, li, a:hover{
+            color: gold;
+        }
+
+        button{
+            padding: 7px 10px;
+            margin-left: 15px;
+            background-color: palegoldenrod;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease 0;
+        }
+
+        button:hover{
+            background-color: gold;
+        }
+        .nav-item{
+            list-style: none;
+        }
+
+        .container {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+.main {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.sun {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: orangered;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em; 
+    animation: orbit 36.5s linear infinite;   
+}
+.moon {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em; 
+    animation: orbit 2.7s linear infinite;
+}
+.earth::before,
+.moon::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;    
+}
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+  @media (max-width: 600px){
+      .navlink, li, a, button{
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+            text-decoration: none;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 4%;
+            background-color: rgb(124, 123, 123);
+        }
+
+        .navlink, li{
+            display: inline-block;
+            padding: 0 3px ;
+        }
+
+        .navlink, li, a{
+            transition: all 0.3s ease 0;
+        }
+
+        .navlink, li, a:hover{
+            color: gold;
+        }
+
+        button{
+            padding: 3px 5px;
+            margin-left: 6px;
+            background-color: palegoldenrod;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease 0;
+        }
+
+        button:hover{
+            background-color: gold;
+        }
+        .nav-item{
+            list-style: none;
+        }
+
+  }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="stars.svg" alt="" style="height: 30px;">
+    <nav class="navbar">
+        <ul class="nav-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contact us</button></a>
+</header>
+
+<div class="container">
+    <div class="main">
+      <div class="sun"></div>
+      <div class="earth">
+        <div class="moon"></div>
+      </div>
+    </div>
+</div>
+
+
+    
+</body>
+</html>
