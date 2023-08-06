@@ -16,6 +16,10 @@
 
    html, body {width: auto!important; overflow-x: hidden!important} 
 
+   body{
+    background-color: black;
+   }
+
    button{
             padding: 2px 8px;
             float: right;        
@@ -38,20 +42,20 @@
     }
 
     .container {
-    width: 100%;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    overflow: hidden;
+      width: 100%;
+      margin: 0;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      overflow: hidden;
 }
 .main {
     font-size: 10px;
     width: 40em;
     height: 40em;
-    position: relative;
+    position: absolute;
 }
 .sun {
     position: absolute;
@@ -117,19 +121,51 @@
   }
 }
 
+@media (min-width: 768px){
+
+  .navbar{
+    width: 100%;
+    margin: 0px;
+  }
+  .container{
+    max-width: 100%;
+}
+}
+
+    h5{
+      color: white;
+    }
+
+    h3{
+      color: white;
+    }
+
+    h2{
+      color: white;
+    }
+
+    h4{
+      color: white;
+    }
+
     p{
+      color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    hr{
+      color: white;
+    }
+
     a{
-      color: inherit;
+      color: white;
     }
   </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" style="font-size: 20px;">
+<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" style="font-size: 18px;">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html"> <img src="./file-earmark-medical.svg" alt="image" height="30px"> <strong>Faisal.NA</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="true" aria-label="Toggle navigation">
@@ -166,12 +202,12 @@
 </div>
 
 <div class="w3-display-container w3-content w3-wide" style="max-width:1600px; min-width:400px;  padding: 8px;" id="home">
-  <h1 class="intro" style="color: black; font-weight: bolder; padding: 10px; display: flex; align-items: center;justify-content: center;
+  <h1 class="intro" style="color: white; font-weight: bolder; padding: 10px; display: flex; align-items: center;justify-content: center;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">HI, I'M FAISAL.</h1>
-  <h2 class="intro" style="color: black; font-weight: bolder; padding: 10px; display: flex; align-items: center;justify-content: center;
+  <h2 class="intro" style="color: white; font-weight: bolder; padding: 10px; display: flex; align-items: center;justify-content: center;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">I'M A WEB DEVELOPER.</h2>
   <hr>
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  <div class="head2 w3-display-bottomleft w3-padding-large w3-opacity">
     <h5 class="w3-xxlarge" style="margin-bottom: 12px;">Welcome to my website.</h5>
     <h5>Developing Small Content Websites</h5>
     <h5>Built Frontend User Interfaces With HTML And CSS.</h5>
@@ -185,12 +221,12 @@
     </div>
 
     <div class="w3-col m6 w3-padding-large">
-      <h2 class="w3-center" style="color: black; padding-top: 15px; padding-bottom: 8px;">Freelance Web Developer</h2> <h3>As a passionate and skilled developer, I take pride in my ability to create innovative and beautiful websites.</h3><br>
+      <h2 class="w3-center" style="color: white; padding-top: 15px; padding-bottom: 8px;">Freelance Web Developer</h2> <h3>As a passionate and skilled developer, I take pride in my ability to create innovative and beautiful websites.</h3><br>
       <p class="w3-large">Developed a websites that utilizes the latest technologies to provide users with a seamless experience. The websites incorporates responsive design, and secure. <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
     </div>
   </div>
   
-  <hr>
+<hr>
   
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large" style="padding: 8px;">

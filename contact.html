@@ -8,23 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <style>
 
-      .gradient-background{
-    background: linear-gradient(300deg, Black, darkgrey);;
-    background-size: 180% 180%;
-    animation: gradient-animation 10 ease infinite;
+  body{ 
+    background-color: black;
   }
-  @keyframes gradient-animation{
-  0%{
-    background-position: 0% 50;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0% 50%;
-  }
-  }
-
+     
   .nav-item{
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
@@ -50,10 +37,15 @@
       color: black;
     }
 
+    label{
+      color: white;
+    }
+
     h2{
       padding: 8px;
       margin-top: 5px;
       margin-bottom: 0;
+      color: white;
     }
     
     .container{
@@ -62,14 +54,14 @@
     }
     
   a{
-    color: inherit;
+    color: white;
   }
   
     </style>
   </head>
-<body class="gradient-background">
+<body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" style="font-size: 20px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" style="font-size: 18px;">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"> <img src="./file-earmark-medical.svg" alt="image" height="30px"> <strong>Faisal.NA</strong></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,8 +90,8 @@
 
     <h2>Get A 10% Comission Each Time.</h2>
 
-    <div class="container mt-5 gradient-background">
-      <h1 style="color: rgb(4, 134, 4);">Contact Me!</h1>
+    <div class="container mt-5">
+      <h1 style="color: white;">Contact Me!</h1>
       <form class="row g-3" action="https://formsubmit.co/27cf15ea3423b378f2315f8dd2a704b0" method="post" >
         
         <input type="text" name="_honey" style="display: none;">
